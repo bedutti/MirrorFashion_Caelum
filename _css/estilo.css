@@ -1,24 +1,36 @@
 body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 }
 header {
     position: relative;
 }
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../_img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+    /* imagem replacement */
+    text-indent: -9999px;
+}
 .sacola {
     background-image: url(../_img/sacola.png);
     background-repeat: no-repeat;
-    background-po    margin-left: auto;
-    margin-right: auto;    margin-left: auto;
-    margin-right: auto;ition: top right;
+    background-position: top right;
     font-size: 14px;
     padding-right: 35px;
     text-align: right;
     width: 140px;
     padding-top: 8px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
 }
 .menu-opcoes {
     position: absolute;
@@ -36,7 +48,76 @@ header {
     margin-left: 20px;
 }
 .container {
-    margin: 0 auto;
+    margin: 0px auto;
     width: 940px;
 }
-
+.busca, .menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+}
+.menu-departamentos {
+    clear: left;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.busca h2, .busca form, .menu-departamentos h2 {
+    margin: 10px;
+}
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+.busca input[type=search] {
+    width: 170px;
+}
+.destaque {
+	margin-top: 10px;
+}
+footer {
+    background-image: url(../_img/fundo-rodape.png);
+    clear: both;
+}
+footer .container {
+    position: relative;
+    padding: 25px;
+}
+.social {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    bottom: 0%;
+    right: 80px;
+    vertical-align: bottom;
+}
+.social li {
+    display: list-item;
+    margin: auto 0px;
+    float: right;
+    margin-left: 25px;
+}
+.social a {
+	/* tamanho da imagem */
+	height: 32px;
+	width: 32px;
+	/* image replacement */
+	display: block;
+    text-indent: -9999px;
+}
+.social a[href*="facebook.com"] {
+	background-image: url(../_img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+	background-image: url(../_img/twitter.png);
+}
+.social a[href*="plus.google.com"] {
+    background-image: url(../_img/googleplus.png);
+}
