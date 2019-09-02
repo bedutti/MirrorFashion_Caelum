@@ -1,0 +1,7 @@
+.form-control:invalid {
+    border: 1px solid #CC0000;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+}
